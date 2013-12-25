@@ -289,7 +289,7 @@ class EGMapCoord
 	  public function __toString()
 	  {
 	
-	    return ((float) $this->getLatitude()).', '.((float) $this->getLongitude());
+	    return (number_format((float)$this->getLatitude(), 4, '.', '').', '.number_format((float)$this->getLongitude(), 4, '.', ''));
 	  }
 	
 	  /**
